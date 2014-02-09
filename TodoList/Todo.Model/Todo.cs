@@ -12,6 +12,6 @@ namespace Todo.Model
         public virtual string Name { get; set; }
 
         [Property(Column = "Done", NotNull = true)]
-        public virtual string Done { get; set; }
+        public virtual bool Done { get; set; }
     }
 }
