@@ -3,6 +3,7 @@
 
 TodoList/packages
 TodoList/Todo.Web/Scripts
+TodoList/.nuget
 
 # User-specific files
 *.suo
