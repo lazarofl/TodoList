@@ -1,5 +1,10 @@
-﻿using System;
+﻿using Castle.ActiveRecord;
+using Castle.ActiveRecord.Framework;
+using Castle.ActiveRecord.Framework.Config;
+using Castle.Core.Configuration;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -16,9 +21,15 @@ namespace Todo.Web
         {
             AreaRegistration.RegisterAllAreas();
 
+            //get the settings from web.config
+            var config = ActiveRecordSectionHandler.Instance;
+            //register your objects with ActiveRecord
+            ActiveRecordStarter.Initialize(config, typeof(Todo.Model.Todo));
+
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
+
     }
 }
