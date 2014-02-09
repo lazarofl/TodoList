@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList", "TodoList.csproj", "{D5F5215A-8467-44D1-8A28-1309561EBAE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Web", "Todo.Web\Todo.Web.csproj", "{8C305A7A-E748-45C3-B621-F1A442BB370D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Model", "Todo.Model\Todo.Model.csproj", "{9996EF0B-8937-4535-8CDB-081C42F9F7DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D5F5215A-8467-44D1-8A28-1309561EBAE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5F5215A-8467-44D1-8A28-1309561EBAE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5F5215A-8467-44D1-8A28-1309561EBAE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5F5215A-8467-44D1-8A28-1309561EBAE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C305A7A-E748-45C3-B621-F1A442BB370D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C305A7A-E748-45C3-B621-F1A442BB370D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C305A7A-E748-45C3-B621-F1A442BB370D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C305A7A-E748-45C3-B621-F1A442BB370D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9996EF0B-8937-4535-8CDB-081C42F9F7DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9996EF0B-8937-4535-8CDB-081C42F9F7DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9996EF0B-8937-4535-8CDB-081C42F9F7DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9996EF0B-8937-4535-8CDB-081C42F9F7DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
