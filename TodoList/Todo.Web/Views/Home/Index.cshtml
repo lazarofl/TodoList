@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Todo List App</title>
+    <link href="~/assets/css/todolist.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <h2>Todo List</h2>
+
+    <div class="container" ng-controller="TodoListController" ng-init="GetAll()">
+        <div class="todoContainer">
+
+            <form class="form" ng-submit="Add()">
+                <input type="text" ng-model="name" required />
+                <input type="submit" value="Adicionar" />
+            </form>
+
+            <ul class="list">
+                <li ng-repeat="item in todoList" ng-class="{strike: item.Done}">
+                    <span>
+                        <input type="checkbox" ng-model="item.Done" ng-click="Toggle(item)" />
+                    </span>
+                    <span>{{item.Name}}</span>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/assets/angularapps/TodoApp.js"></script>
+
+</body>
+</html>
