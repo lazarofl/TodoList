@@ -14,6 +14,7 @@ namespace Todo.Test
             Todo.Model.Todo todo = new Model.Todo();
             todo.Name = "Nova todo";
             todo.Save();
+            base.Flush();
 
             var expected = 1;
 
@@ -21,19 +22,6 @@ namespace Todo.Test
 
             Assert.AreEqual(expected, result);
         }
-
-        [Test]
-        public void MarcarComoFinalizadoTeste()
-        {
-
-        }
-
-        [Test]
-        public void ObterTodasAsTodosTeste()
-        {
-
-        }
-
 
     }
 }
