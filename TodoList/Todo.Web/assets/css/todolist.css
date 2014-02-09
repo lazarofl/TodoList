@@ -1,0 +1,25 @@
+﻿body {
+    background-color: #ccc;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.todoContainer {
+    width: 60%;
+    display: inline-block;
+    background-color: #f1f1f1;
+    border: 1px dashed black;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+}
+
+.list {
+    padding: 2px 2px 2px 2px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
