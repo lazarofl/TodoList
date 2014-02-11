@@ -13,7 +13,7 @@ namespace Todo.Web.Controllers
         [HttpGet]
         public ActionResult GetAll()
         {
-            var todolist = Todo.Model.Todo.FindAll();
+            var todolist = Todo.Model.Todo.FindAll(new NHibernate.Criterion.Order("Id",false));
             return Json(todolist, JsonRequestBehavior.AllowGet);
         }
 
