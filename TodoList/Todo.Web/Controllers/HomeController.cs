@@ -31,21 +31,14 @@ namespace Todo.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult Done(int id, bool done)
+        public void Done(int id, bool done)
         {
             var todo = Todo.Model.Todo.Find(id);
             todo.Done = done;
 
             todo.SaveAndFlush();
-
-            return Json(todo, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpPost]
-        public ActionResult Done(string id, bool done)
-        {
-            return this.Done(id.ToString(), done);
-        }
 
     }
 }

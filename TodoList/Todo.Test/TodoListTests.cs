@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using Castle.ActiveRecord;
 using Todo.Web.Controllers;
+using System.Web.Mvc;
 
 namespace Todo.Test
 {
@@ -21,6 +22,14 @@ namespace Todo.Test
             Assert.AreEqual(expected, result);
         }
 
+        [Test]
+        public void AddTodoHaveJsonResultTest()
+        {
+            HomeController controller = new HomeController();
+            var result = controller.Add("new todo");
+
+            Assert.IsInstanceOf<JsonResult>(result);
+        }
 
         [Test]
         public void NewTodoIsDoneFalseTest()
